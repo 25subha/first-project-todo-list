@@ -1,0 +1,77 @@
+
+.todoouter {
+    width: 1170px;
+    height: auto;
+    background-color: rgb(187, 219, 219);
+    margin: auto;
+   padding: 16px;
+}
+
+.todoouter h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+    
+    display: flex;
+    gap: 20px;
+}
+
+form input {
+    flex-basis: 80%;
+    border: 1px solid black;
+    height: 40px;
+    border-radius: 7px;
+    padding: 8px;
+}
+
+form button {
+    flex-basis: 20%;
+    background-image: linear-gradient(to bottom right, red,yellow);
+    color: white;
+    border: 1px sold red;
+    border-radius: 20px;
+   
+}
+
+.outerlist {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px; 
+}
+
+.outerlist ul  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   
+}
+
+.outerlist ul li {
+    color: aliceblue;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
+    position: relative;
+    background: #140857;
+    border-radius: 10px;
+}
+
+.outerlist ul li span {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.underlineTodolist {
+    background-color: rgb(91, 12, 194)!important;
+    text-decoration: line-through;
+    color: aqua ;
+}
