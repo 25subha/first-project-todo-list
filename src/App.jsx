@@ -1,10 +1,14 @@
 import Navber from "./components/Navber";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Skill from "./pages/Skill";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import { Route,Routes } from "react-router-dom";
+import Faq from "./components/Faq";
+import ProjectOne from "./pages/ProjectOne";
+import FormController from "./pages/FormController";
+import Project3 from "./pages/Project3";
+import Project4 from "./pages/Project4";
+
 
 function App() {
 
@@ -14,12 +18,17 @@ function App() {
    <main>
     <Routes>
     <Route path="/" element={<Home />}/>
-    <Route path="/about" element={<About />}/>
+    <Route path="/projectone" element={<ProjectOne />}/>
     <Route path="/contact" element={<Contact />}/>
     <Route path="/project" element={<Project />}/>
-    <Route path="/skill" element={<Skill />}/>
+    <Route path="/project3" element={<Project3 />}/>
+    <Route path="/faq" element={<Faq />}/>
+    <Route path="/formcontroller" element={<FormController />}/>
+    <Route path="/project4" element={<Project4 />}/>
+
+    
     </Routes>
-   </main>
+   </main>  
     
     </div>
   );

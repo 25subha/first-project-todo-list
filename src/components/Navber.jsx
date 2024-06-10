@@ -7,10 +7,11 @@ const Navber = () => {
         <h1 className="cursor-pointer"><Link to="/">subhankar</Link></h1>
         <nav className="">
           <ul className="flex justify-between flex-wrap cursor-pointer">
-            <li className="px-4"> <Link to='/about'>about me</Link></li>
+            <li className="px-4"> <Link to='/projectone'>Project1</Link></li>
             <li className="px-4"><Link to ='/project'>projects</Link></li>
             <li className="px-4"><Link to='/contact'>Contact</Link></li>
-            <li className="px-4"><Link to='/skill'>skill</Link></li>
+            <li className="px-4"><Link to='/project3'>Project3</Link></li>
+            <li className="px-4"><Link to='/project4'>Project4</Link></li>
           </ul>
         </nav>
       </header>

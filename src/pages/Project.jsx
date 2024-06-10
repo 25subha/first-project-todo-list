@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/faq.css'
+import "./styles/faq.css"
 
 const Project = () => {
   const [todolist, setTodolist] = useState([]);
@@ -28,9 +28,9 @@ const Project = () => {
     <>
     <div className='todoouter'>
     <h1>todo list</h1>
-      <form onSubmit={saveToDoList}>
+      <form onSubmit={saveToDoList} className='formDevition'>
         <input type="text" name='todoname'/>
-        <button>add</button>
+        <button className='btn'>add</button>
       </form>
       <div className='outerlist'> 
         <ul>
@@ -46,15 +46,17 @@ export default Project;
 
 
 const TodoListItems = ({value,indexNumber,todolist,setTodolist}) => {
-  const [status,setStatus] = useState(false);
+  let [status,setStatus] = useState(false);
+
+
   let deleteRow = () => {
     let finalList = todolist.filter((v,i) => i != indexNumber)
-    setTodolist(finalList)
+    setTodolist(finalList);
   }
 let checkStatus = () => {
  setStatus(!status)
 };
   return(
-    <li className={status ? "underlineTodolist" : ""} onClick={checkStatus} > {indexNumber+1}{". "} {value} <span onClick={deleteRow}>&times;</span></li> 
+    <li className={(status) ? "underlineTodolist" : " "} onClick={checkStatus} > {indexNumber+1}{". "} {value} <span onClick={deleteRow}>&times;</span></li> 
   );
 };

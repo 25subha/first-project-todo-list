@@ -15,7 +15,7 @@
     font-weight: bold;
 }
 
-form {
+.formDevition {
     width: 100%;
     margin: auto;
     
@@ -23,7 +23,7 @@ form {
     gap: 20px;
 }
 
-form input {
+.formDevition  input {
     flex-basis: 80%;
     border: 1px solid black;
     height: 40px;
@@ -31,7 +31,7 @@ form input {
     padding: 8px;
 }
 
-form button {
+.btn {
     flex-basis: 20%;
     background-image: linear-gradient(to bottom right, red,yellow);
     color: white;
