@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Hadge from '../../public/haze.png'
 
 const Project4 = () => {
   let [city, setCity] = useState('');
@@ -32,7 +31,7 @@ const Project4 = () => {
                 <input type="text" placeholder='City Name' value={city} className='w-[300px] h-[40px] pl-3 rounded-md' onChange={(e) => setCity(e.target.value)}/> <button className='bg-blue-800 p-[8px_18px] text-white rounded-md'>Search</button>
             </form>
 
-            <div className='h-80 w-80 bg-[rgba(47,40,40,0.08)] bg- bg-cover  mx-auto my-20 p-5 rounded-sm shadow-md relative shadow-slate-500'>
+            <div className='h-80 w-80 bg-[rgba(47,40,40,0.08)] bg-[url(https://images.unsplash.com/photo-1593978301851-40c1849d47d4?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover  mx-auto my-20 p-5 rounded-sm shadow-md relative shadow-slate-500'>
 
              
               <img src="https://cdn.pixabay.com/animation/2023/11/30/10/11/10-11-02-622_256.gif" className={`absolute w-24 top-[100px] left-[120px] ${loding ? '' : 'hidden'}`}alt="" />

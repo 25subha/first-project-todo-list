@@ -12,6 +12,8 @@ const Navber = () => {
             <li className="px-4"><Link to='/contact'>Contact</Link></li>
             <li className="px-4"><Link to='/project3'>Project3</Link></li>
             <li className="px-4"><Link to='/project4'>Project4</Link></li>
+            <li className="px-4"><Link to='/project5'>Project5</Link></li>
+            
           </ul>
         </nav>
       </header>

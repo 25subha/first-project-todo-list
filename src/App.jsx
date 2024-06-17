@@ -8,6 +8,9 @@ import ProjectOne from "./pages/ProjectOne";
 import FormController from "./pages/FormController";
 import Project3 from "./pages/Project3";
 import Project4 from "./pages/Project4";
+import Project5 from "./pages/Project5";
+import Navber2 from "./pages/Navber2";
+import App2 from "./pages/App2";
 
 
 function App() {
@@ -25,6 +28,12 @@ function App() {
     <Route path="/faq" element={<Faq />}/>
     <Route path="/formcontroller" element={<FormController />}/>
     <Route path="/project4" element={<Project4 />}/>
+    <Route path="/project5" element={<Project5 />}/>
+    <Route path="/navber2" element={<Navber2 />}/>
+    <Route path="/app2" element={<App2 />}/>
+
+
+
 
     
     </Routes>
