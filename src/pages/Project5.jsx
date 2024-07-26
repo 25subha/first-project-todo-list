@@ -10,7 +10,7 @@ const Project5 = () => {
   let [catName, setCatName] = useState('');
   let [loding, setLoding] = useState(false)
   let getCategory = () => {
-    axios.get("https://dummyjson.com/products/category-list")
+    axios.get("https://dummyjson.com/products/category-list") //fatdh product api in dummy json.com 
     .then((res)=>res.data)
     .then((finalres) => {
       setFinalcat(finalres)
@@ -42,22 +42,22 @@ const Project5 = () => {
     }
    },[catName])
   return (
-    <div>
+    <>
         <div className='max-w-[1320px] mx-auto my-16 '>
             <h1 className='text-center text-[40px] font-bold pb-12 '>product</h1>
             <div className='grid grid-cols-[30%_auto] gap-20'>
                 <div className='' >
-                    <Category Finalcat ={finalcat} setCatName={setCatName}/>
+                   <Category Finalcat ={finalcat} setCatName={setCatName}/> {/*category list section */}
                 </div>
-                <div className='grid grid-cols-3 gap-4'>
-                    <Product finalPro ={finalPro} />
+                <div className='grid grid-cols-3 gap-6 h-[300px]'>
+                    <Product finalPro ={finalPro} />  {/*products list section */}
                     <img src="https://cdn.pixabay.com/animation/2023/11/30/10/11/10-11-02-622_256.gif" className={` ${loding ? '' : 'hidden'}`} alt="" />
                     
                    
                 </div>
                 </div>
         </div>
-    </div>
+    </>
   )
 }
 

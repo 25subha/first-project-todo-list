@@ -11,7 +11,7 @@ const Navber2 = () => {
 
   return (
     <div>
-      <div className=' mx-auto md:flex md:px-20 px-4 justify-between bg-green-500 p-2'>
+      <div className=' mx-auto md:flex md:px-20 px-4 justify-between bg-blue-500 p-2'>
       <div>
       <h1>subha</h1>
       </div>

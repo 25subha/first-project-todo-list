@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+// created a weathar app get throw api;
 const Project4 = () => {
   let [city, setCity] = useState('');
   let [wdetails, setWdetails] = useState()
@@ -7,7 +7,7 @@ const Project4 = () => {
 
   let heanldelSubmit = (event) => {
     setLoding(true);
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1625127e36a105926561c62811351a43&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1625127e36a105926561c62811351a43&units=metric`) //weather app api in open weathermap.org;
     .then((res) => res.json())
     .then((finalResponse) => {
       console.log(finalResponse)

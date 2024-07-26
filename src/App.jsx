@@ -12,7 +12,9 @@ import Project5 from "./pages/Project5";
 import Navber2 from "./pages/Navber2";
 import App2 from "./pages/App2";
 
-
+import Banner from "./pages/Banner";
+import Getinvolved from "./components/home/Getinvolved";
+import Story from "./components/home/Story";
 function App() {
 
   return (
@@ -31,11 +33,10 @@ function App() {
     <Route path="/project5" element={<Project5 />}/>
     <Route path="/navber2" element={<Navber2 />}/>
     <Route path="/app2" element={<App2 />}/>
+    <Route path="/banner" element={<Banner />}/>
+    <Route path="/getinvolved" element={<Getinvolved />}/>
+    <Route path="/story" element={<Story />}/>
 
-
-
-
-    
     </Routes>
    </main>  
     
